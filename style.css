@@ -11,7 +11,7 @@
 
   /* font weights */
   --fw-regular: 300;
-  --fw-bold: 500;
+  --fw-bold: 600;
   --fw-black: 800;
 
   /* font sizes */
@@ -23,6 +23,7 @@
   --fs-700: 2.25rem;
 
   /* radius sizes */
+  --rd-200: 8px;
   --rd-300: 12px;
   --rd-400: 16px;
   --rd-500: 20px;
@@ -53,7 +54,7 @@ body {
   background: var(--clr-yellow);
   color: var(--clr-gray-900);
   font-family: var(--ff-base);
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
 }
 /*
       5. Improve media defaults
@@ -105,6 +106,7 @@ h6 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  gap: var(--rd-300);
 }
 
 .card {
@@ -120,12 +122,10 @@ h6 {
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: var(--rd-400);
+  gap: var(--rd-300);
 }
 
 .illustration {
-  width: 280px;
-  height: 280px;
   border-radius: var(--rd-300);
 }
 
@@ -133,9 +133,10 @@ h6 {
   background-color: var(--clr-yellow);
   color: var(--clr-gray-900);
   font-weight: var(--fw-bold);
-  padding: var(--rd-300);
-  border-radius: var(--rd-300);
+  padding: var(--rd-200);
+  border-radius: var(--rd-200);
   width: fit-content;
+  font-size: var(--fs-200);
 }
 
 .publish-date {
@@ -160,6 +161,12 @@ h6 {
 .author {
   display: flex;
   gap: var(--rd-300);
-  justify-content: center;
   width: fit-content;
+  font-size: var(--fs-200);
+  align-items: center;
+  font-weight: var(--fw-bold);
+}
+
+.author-img{
+  width: 28px;
 }
