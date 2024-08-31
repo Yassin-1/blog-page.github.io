@@ -117,6 +117,7 @@ h6 {
   border: 1px solid var(--clr-gray-900);
   padding: var(--rd-300);
   border-radius: var(--rd-400);
+  box-shadow: 13px 11px 0px 0px var(--clr-gray-900);
 }
 
 .card-body {
