@@ -134,7 +134,11 @@ h6 {
   color: var(--clr-gray-900);
   font-weight: var(--fw-bold);
   padding: var(--rd-200);
+<<<<<<< HEAD
   border-radius: var(--rd-200);
+=======
+  border-radius: var(--rd-300);
+>>>>>>> cf927d35b9fbd8fc2d95d0cb4fb6fda104adb2ee
   width: fit-content;
   font-size: var(--fs-200);
 }
@@ -162,6 +166,7 @@ h6 {
   display: flex;
   gap: var(--rd-300);
   width: fit-content;
+<<<<<<< HEAD
   font-size: var(--fs-200);
   align-items: center;
   font-weight: var(--fw-bold);
@@ -169,4 +174,11 @@ h6 {
 
 .author-img{
   width: 28px;
+=======
+  font-size: var(--fs-300);
+}
+
+.author-img{
+  width: 38px;
+>>>>>>> cf927d35b9fbd8fc2d95d0cb4fb6fda104adb2ee
 }
