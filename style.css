@@ -1,100 +1,160 @@
 :root {
-    /* colors */
-    --clr-white: hsl(220, 37%, 100%);
-  
-    --clr-slate-300:hsl(212, 45%, 89%);
-    --clr-slate-500:hsl(216, 15%, 48%);
-    --clr-slate-900:hsl(218, 44%, 22%);
-  
-    /* font families */
-    --ff-base: "Outfit", sans-serif;
-  
-    /* font weights */
-    --fw-regular: 500;
-    --fw-bold: 600;
-    --fw-black: 700;
-  
-    /* font sizes */
-    --fs-200: 0.82rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.375rem;
-    --fs-600: 1.75rem;
-    --fs-700: 2.25rem;
-  
-    /* font sizes */
-    --rd-300: 12px;
-    --rd-400: 16px;
-    --rd-500: 20px;
-    --rd-600: 24px;
-    --rd-700: 30px;
-  }
-  
-  /*
+  /* colors */
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-900: hsl(0, 0%, 7%);
+
+  /* font families */
+  --ff-base: "Figtree", sans-serif;
+
+  /* font weights */
+  --fw-regular: 300;
+  --fw-bold: 500;
+  --fw-black: 800;
+
+  /* font sizes */
+  --fs-200: 0.82rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-700: 2.25rem;
+
+  /* radius sizes */
+  --rd-300: 12px;
+  --rd-400: 16px;
+  --rd-500: 20px;
+  --rd-600: 24px;
+  --rd-700: 30px;
+}
+
+/*
     1. Use a more-intuitive box-sizing model.
   */
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
       2. Remove default margin
     */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
       Typographic tweaks!
       3. Add accessible line-height
       4. Improve text rendering
     */
-  body {
-    background: var(--clr-slate-300);
-    color: var(--clr-slate-900);
-    font-family: var(--ff-base);
-    font-size: var(--fs-300);
-  }
-  /*
+body {
+  background: var(--clr-slate-300);
+  color: var(--clr-slate-900);
+  font-family: var(--ff-base);
+  font-size: var(--fs-300);
+}
+/*
       5. Improve media defaults
     */
-  img,
-  picture,
-  video,
-  canvas,
-  svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
       6. Remove built-in form typography styles
     */
-  input,
-  button,
-  textarea,
-  select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
       7. Avoid text overflows
     */
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
       8. Create a root stacking context
     */
-  #root,
-  #__next {
-    isolation: isolate;
-  }
-  
-  /*
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*
       Body
     */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rd-400);
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-gray-900);
+  padding: var(--rd-300);
+  border-radius: var(--rd-400);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rd-400);
+}
+
+.illustration {
+  width: 280px;
+  height: 280px;
+  border-radius: var(--rd-300);
+}
+
+.pill {
+  background-color: var(--clr-yellow);
+  color: var(--clr-gray-900);
+  font-weight: var(--fw-bold);
+  padding: var(--rd-300);
+  border-radius: var(--rd-300);
+}
+
+.publish-date {
+  color: var(--clr-gray-900);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-200);
+}
+
+.card-title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-black);
+  color: var(--clr-gray-900);
+}
+
+.sub-title {
+  color: var(--clr-gray-500);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-200);
+}
+
+.author {
+  display: flex;
+  gap: var(--rd-300);
+  justify-content: center;
+}
